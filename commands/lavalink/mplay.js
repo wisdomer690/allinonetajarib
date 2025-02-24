@@ -26,11 +26,11 @@ const { autoplayCollection } = require('../../mongodb');
 const { playlistCollection } = require('../../mongodb');
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('Music')
-        .setDescription('Music Play commands.')
+        .setName('music')
+        .setDescription('Music player commands.')
         .addSubcommand(subcommand =>
             subcommand
-                .setName('Play')
+                .setName('play')
                 .setDescription('Play a song or playlist in the voice channel.')
                 .addStringOption(option =>
                     option.setName('query')
