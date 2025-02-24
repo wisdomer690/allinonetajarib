@@ -27,7 +27,7 @@ const { playlistCollection } = require('../../mongodb');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('mzika')
-        .setDescription('Music player commands.')
+        .setDescription('mzika wisdom commands.')
         .addSubcommand(subcommand =>
             subcommand
                 .setName('wisdom')
